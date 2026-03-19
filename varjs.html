@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // js primitive data 
+        var  myName = "dravin"
+        console.log("MY NAME IS " +myName);
+         var myNum = 48653396746;
+         console.log("my moblie nuber" + myNum);
+         console.log(typeof(myName));
+         // boolean
+         var isMarried = true;
+         console.log (myName + "is married ?" +isMarried );
+         console.log(typeof(isMarried));
+        // udefine
+        var myAdd;
+        console.log(myName +" ADDRESS "+ myAdd);
+        console.log(typeof(myAdd));
+
+         //null
+         var  myEmail =null;
+         console.log(myName +"myEmail "+ myEmail);
+         console.log(typeof(myEmail));
+
+         //bight
+         var myValu = 456453456385386278642646238764826482747887546778937375;
+         console.log(myValu);
+         console.log(typeof(myValu));
+
+         //sumbol -unique  primitive data  type in js 
+         var  va1 =Symbol("hello");
+         var va2 =Symbol("hello");
+         console.log (va1== va2);
+         console.log(typeof(va1));
+
+
+         // reference or non -primitive  data value
+         //object -value  are define in paird of key valu
+
+         var  student ={
+            name :"Dravin ",
+            class : 18,
+            rollNumber :2439347838,
+            course : "b.tech"
+            , age: 19,
+            email : "dravinchandra54@gmail.com"
+
+         }
+         console.log (student);
+         console.log(student.course);
+         console.log(Object.keys(student).length);
+         //array
+         let studentDetails  = ["Dravin chandra" , 18 , "b.tech ",  false , "dravinchandra54@gmail.com" ]
+
+         console.log(studentDetails[2]);
+         console.log(studentDetails[3]);
+         console.log(studentDetails.length);
+
+         for(i=0 ; i<studentDetails.length; i++){
+            console.log(studentDetails[i]);
+         }
+         //function - block of code i.e  to perfom any task
+
+         function myInfo(){
+            let num1 = 3;
+            let num2 = 4 ;
+            let result = num1 + num2;
+            console.log ("Addition of two number :" + (num1 +num2));
+            console.log(result);
+         }
+       myInfo();
+     </script>
+    
+</body>
+</html>

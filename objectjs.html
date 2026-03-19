@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+  <script>
+    let myInfo ={
+        name : "Aryan Tiwari" ,
+        no : 7309448426,
+        age : 19,
+        isMarried : false ,
+        address : {
+            streetno : 5,
+            area : "paidleganj",
+            pincode : 273001,
+            city : "gorakhpur"
+        },
+        course : "b.tech",
+        branch : "CSE",
+        year : 2025,
+        education : function(){
+           return console.log("My education is " + course + branch + "and"+ year)
+         }
+    }
+    // console.log(myInfo.education);
+    console.log (myInfo.address.city );
+    console.log(myInfo["name"]);
+     console.log(Object.keys(myInfo).length);
+    console.log(myInfo);
+    //find object length
+    let keys = Object.keys(myInfo);
+    console.log (keys.length);
+    for (i =0 ; i<keys.length; i++){
+        console.log(keys[i] + ":"+ myInfo[keys[i]])
+    }
+    // delete object 
+    console.log(delete myInfo.name);
+    console.log(myInfo);
+   for ( let x in myInfo){
+    console.log(myInfo[x])
+   }
+
+   let student = new Object();
+   student.name = "Shivam Patel";
+   student.age = 25;
+   student.course = "B.tech";
+   student.rollno = 2503201000484;
+
+   console.log(student);
+   
+  </script>
+    
+</body>
+</html>
